@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'khk$vm@477v2q4#_s4wb1&_f=q4(((saau_alc&f-fl6#@)4xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'FALSE'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.mzhangdesigns.com']
 
 
 # Application definition
