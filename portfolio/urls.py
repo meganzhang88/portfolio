@@ -24,6 +24,6 @@ urlpatterns = [
     path('', commissions.views.home, name="home"),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 # ^ pulling the static items we created in settings.py and applying them to the urls
-#  to set the things we will use when showing static files 
+#  to set the things we will use when showing static files
