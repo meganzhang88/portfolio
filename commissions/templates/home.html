@@ -17,8 +17,14 @@
 	<link rel="stylesheet" href="static/css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-
-
+	<script>
+		window.onload = function() {
+			if(!window.location.hash) {
+				window.location = window.location + '#loaded';
+				window.location.reload();
+			}
+		}
+	</script>
 </head>
 
 <!--NAV BAR-->
@@ -218,7 +224,16 @@
 
 	<!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    	<script src="js/google-map.js"></script> -->
-
+		<script src="js/google-map.js"></script> -->
+	    <!-- server side script for fast page loading -->
+	<script>
+		$(document).ready(function() {
+			$('#images').kwicks({
+			max : 600,
+			spacing : 2
+			});
+			$('ul.sf-menu').sooperfish();
+		});
+	</script>
     </body>
     </html>
